@@ -4,6 +4,11 @@ class Ray {
     this.dir = p5.Vector.fromAngle(angle);
   }
 
+  // set new angle
+  setAngle(angle) {
+    this.dir = p5.Vector.fromAngle(angle);
+  }
+
   // test to see if ray is pointing at boundary
   lookAt(x, y) {
     this.dir.x = x - this.pos.x;
